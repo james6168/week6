@@ -83,7 +83,7 @@ class Student:
         self.total = list_of_marks
 
     def save_total(self):
-        with open("Studenten Karte", "a") as student_data:
+        with open(f"{self.full_name}.txt", "a") as student_data:
             student_data.write(f"\n{self.full_name} - {self.course} - {self.total}")
 
 
