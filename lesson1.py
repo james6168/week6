@@ -86,6 +86,9 @@ class Student:
         with open(f"{self.full_name}.txt", "a") as student_data:
             student_data.write(f"\n{self.full_name} - {self.course} - {self.total}")
 
+    def set_course(self):
+        self.course += 1
+
 
 tabyldieva_nazgul_1 = Student("Tabyldieva Nazgul", 1)
 tabyldieva_nazgul_1.set_subjects({"python": 100, "english": 0})
