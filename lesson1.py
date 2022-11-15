@@ -67,36 +67,40 @@ from random import randint
 # 4. set_course() - при каждом вызове должен увеличиться на 1, и дозаписать
 
 
-class Student:
+# class Student:
+#
+#     def __init__(self, full_name: str, course: int):
+#         self.full_name = full_name
+#         self.course = course
+#         self.subjects = {}
+#         self.total = 0
+#
+#     def set_subjects(self, subjects_to_set: dict):
+#         self.subjects = subjects_to_set
+#
+#     def get_total(self):
+#         list_of_marks = sum(self.subjects.values()) / len(self.subjects)
+#         self.total = list_of_marks
+#
+#     def save_total(self):
+#         with open(f"{self.full_name}.txt", "a") as student_data:
+#             student_data.write(f"\n{self.full_name} - {self.course} - {self.total}")
+#
+#     def set_course(self):
+#         self.course += 1
+#
+#
+# tabyldieva_nazgul_1 = Student("Tabyldieva Nazgul", 1)
+# tabyldieva_nazgul_1.set_subjects({"python": 100, "english": 0})
+# tabyldieva_nazgul_1.get_total()
+# tabyldieva_nazgul_1.save_total()
+#
+# tabyldieva_nazgul_2 = Student("Tabyldieva Nazgul", 2)
+# tabyldieva_nazgul_2.set_subjects({"java": 88, "german": 78})
+# tabyldieva_nazgul_2.get_total()
+# tabyldieva_nazgul_2.save_total()
 
-    def __init__(self, full_name: str, course: int):
-        self.full_name = full_name
-        self.course = course
-        self.subjects = {}
-        self.total = 0
-
-    def set_subjects(self, subjects_to_set: dict):
-        self.subjects = subjects_to_set
-
-    def get_total(self):
-        list_of_marks = sum(self.subjects.values()) / len(self.subjects)
-        self.total = list_of_marks
-
-    def save_total(self):
-        with open(f"{self.full_name}.txt", "a") as student_data:
-            student_data.write(f"\n{self.full_name} - {self.course} - {self.total}")
-
-    def set_course(self):
-        self.course += 1
+# class vs objects
 
 
-tabyldieva_nazgul_1 = Student("Tabyldieva Nazgul", 1)
-tabyldieva_nazgul_1.set_subjects({"python": 100, "english": 0})
-tabyldieva_nazgul_1.get_total()
-tabyldieva_nazgul_1.save_total()
-
-tabyldieva_nazgul_2 = Student("Tabyldieva Nazgul", 2)
-tabyldieva_nazgul_2.set_subjects({"java": 88, "german": 78})
-tabyldieva_nazgul_2.get_total()
-tabyldieva_nazgul_2.save_total()
 
